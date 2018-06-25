@@ -1,16 +1,18 @@
 # IdentIcon
 
-Generate IdentIcons (pseudo-random) avatars inspired by GitHub avatars.
-// deterministic
-It generates an image (using golang's stdlib image encoders) based on a text.
+[![Go Report Card](https://goreportcard.com/badge/github.com/nullrocks/identicon)](https://goreportcard.com/report/github.com/nullrocks/identicon)
 
-It hashes the text and iterates over the bytes of the digested hash to pick whether to draw a point and chose where to go next.
+**IdentIcon** is an open source avatar generator inspired by GitHub avatars. 
 
-IdentIcon's Generator enables the creation of customized figures: (NxN size, points density, custom color palette) as well as multiple exporting formats in case the developer wants to generate its own images.
+
+IdentiIcon uses a deterministic algorithm that generates an image (using Golang's stdlib image encoders) based on a text (Generally Usernames, Emails or just random strings), by hashing it and iterating over the bytes of the digest to pick whether to draw a point, pick a color or choose where to go next.
+
+
+IdentIcon's Generator enables the creation of customized figures: (NxN size, points density, custom color palette) as well as multiple exporting formats in case the developers want to generate their own images.
 
 ## Installation
 ```bash
-go get github.com/nullrocks/identicon
+$ go get github.com/nullrocks/identicon
 ```
 
 ## Usage 
