@@ -121,7 +121,7 @@ func TestIdentIconCanvasString_custom(t *testing.T) {
 func TestIdentIconCanvasArray_generator(t *testing.T) {
 	ii := generatedCanvas()
 	arr := ii.Canvas.Array()
-	expected := [][]int{[]int{0, 0, 0, 0, 0}, []int{1, 1, 1, 1, 1}, []int{1, 0, 1, 0, 1}, []int{0, 0, 2, 0, 0}, []int{0, 0, 0, 0, 0}}
+	expected := [][]int{{0, 0, 0, 0, 0}, {1, 1, 1, 1, 1}, {1, 0, 1, 0, 1}, {0, 0, 2, 0, 0}, {0, 0, 0, 0, 0}}
 
 	if len(arr) != len(expected) {
 		t.Fatalf("Unexpected Canvas Array length: expected %v, actual %v", len(expected), len(arr))
@@ -139,7 +139,7 @@ func TestIdentIconCanvasArray_generator(t *testing.T) {
 func TestIdentIconCanvasArray_custom(t *testing.T) {
 	c := customCanvas()
 	arr := c.Array()
-	expected := [][]int{[]int{1, 1, 0, 1, 1}, []int{0, 0, 0, 0, 0}, []int{0, 0, 0, 0, 0}, []int{0, 1, 1, 1, 0}, []int{0, 0, 0, 0, 0}}
+	expected := [][]int{{1, 1, 0, 1, 1}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 1, 1, 1, 0}, {0, 0, 0, 0, 0}}
 
 	if len(arr) != len(expected) {
 		t.Fatalf("Unexpected Canvas Array length: expected %v, actual %v", len(expected), len(arr))

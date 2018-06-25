@@ -293,7 +293,7 @@ func newIdentIcon(
 	// Reflection Line
 	identicon.drawableWidth = identicon.Size / 2
 
-	// Since the canvas is a symmetrical relfection make sure to:
+	// Since the canvas is a symmetrical reflection make sure to:
 	//  - Handle even and odd Canvas sizes
 	if identicon.Size%2 == 1 {
 		// Is odd, the vertical middle point exist.

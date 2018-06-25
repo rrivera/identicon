@@ -11,7 +11,7 @@ import (
 func main() {
 
 	// transparentBg := func(cb []byte, fc color.Color) color.Color {
-	// 	return color.Transparent
+	//      return color.Transparent
 	// }
 
 	namespaces := []string{
@@ -28,9 +28,9 @@ func main() {
 	}
 
 	sizes := [][]int{
-		[]int{5, 3},
-		[]int{7, 4},
-		[]int{10, 7},
+		{5, 3},
+		{7, 4},
+		{10, 7},
 	}
 
 	for _, ns := range namespaces {
