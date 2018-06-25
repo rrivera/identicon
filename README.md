@@ -2,7 +2,7 @@
 
 
 ![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)
- [![Go Report Card](https://goreportcard.com/badge/github.com/nullrocks/identicon)](https://goreportcard.com/report/github.com/nullrocks/identicon)
+ [![Go Report Card](https://goreportcard.com/badge/github.com/nullrocks/identicon)](https://goreportcard.com/report/github.com/nullrocks/identicon) [![](https://godoc.org/github.com/nullrocks/identicon?status.svg)](http://godoc.org/github.com/nullrocks/identicon)
 
 **IdentIcon** is an open source avatar generator inspired by GitHub avatars. 
 
