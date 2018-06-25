@@ -1,13 +1,13 @@
-// Package identicon generates IdentIcons (pseudo-random) avatars inspired by
-// GitHub avatars.
+// Package identicon is an open source avatar generator inspired by GitHub avatars.
 //
-// It generates an image (using stdlib image encoders) or string based on a text
-// It hashes the text and iterates over the bytes of the digested hash to pick
-// whether to draw a point and chose where to go next.
+// IdentiIcon uses a deterministic algorithm that generates an image (using Golang's
+// stdlib image encoders) based on a text (Generally Usernames, Emails or just
+// random strings), by hashing it and iterating over the bytes of the digest to pick
+// whether to draw a point, pick a color or choose where to go next.
 //
 // IdentIcon's Generator enables the creation of customized figures: (NxN size,
-// points density, custom color palette) as well as multiple exporting formats
-// in case the developer wants to generate its own images.
+// points density, custom color palette) as well as multiple exporting formats in
+// case the developers want to generate their own images.
 package identicon
 
 import (
