@@ -66,3 +66,8 @@ func (ii *IdentIcon) Jpeg(pixels int, quality int, w io.Writer) error {
 	img := ii.Image(pixels)
 	return jpeg.Encode(w, img, &jpeg.Options{Quality: quality})
 }
+
+// Svg writes an image of pixels
+func (ii *IdentIcon) Svg(pixels int, w io.Writer) error {
+	return svgEncode(w, ii, pixels)
+}

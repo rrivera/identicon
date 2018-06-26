@@ -156,3 +156,17 @@ func TestIdentIconImageJpeg(t *testing.T) {
 		}
 	}
 }
+
+func TestIdentIconImageSvg(t *testing.T) {
+	ig, _ := identicon.New("", 5, 2)
+
+	username := "nullrocks"
+	ii, _ := ig.Draw(username)
+
+	out := new(bytes.Buffer)
+	err := ii.Svg(300, out)
+
+	if err != nil {
+		t.Errorf("Image SVG shouldn't error: expected %v, actual %v", nil, err)
+	}
+}
