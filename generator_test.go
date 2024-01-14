@@ -5,7 +5,7 @@ import (
 	"image/color"
 	"testing"
 
-	"github.com/nullrocks/identicon"
+	"github.com/rrivera/identicon"
 )
 
 func Example() {
@@ -19,7 +19,7 @@ func Example() {
 		panic(err)
 	}
 
-	username := "nullrocks"
+	username := "rrivera"
 	ii, err := ig.Draw(username) // Generate an IdentIcon
 
 	if err != nil {
@@ -92,7 +92,7 @@ func ExampleNew_customOptions() {
 	)
 
 	// All generated IdentIcons will match configuration (fill=red, bg=transparent, isRandom=true)
-	ig.Draw("nullrocks")
+	ig.Draw("rrivera")
 	ig.Draw("username")
 	ig.Draw("admin")
 
@@ -155,7 +155,7 @@ func TestGeneratorDraw(t *testing.T) {
 		t.Errorf("Generator should be valid: expected %v, actual %v", nil, err)
 	}
 
-	ii, err := ig.Draw("nullrocks")
+	ii, err := ig.Draw("rrivera")
 
 	if err != nil {
 		t.Errorf("IdentIcon should be valid: expected %v, actual %v", nil, err)
@@ -176,7 +176,7 @@ func TestGeneratorDraw_size(t *testing.T) {
 		2,
 	)
 
-	ii, _ := ig.Draw("nullrocks")
+	ii, _ := ig.Draw("rrivera")
 
 	str := ii.String("", ".")
 	expected := "11.2.11\n2.....2\n.......\n.......\n.......\n.......\n1.212.1"

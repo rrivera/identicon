@@ -7,7 +7,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/nullrocks/identicon"
+	"github.com/rrivera/identicon"
 )
 
 func ExampleIdentIcon_Jpeg() {
@@ -160,7 +160,7 @@ func TestIdentIconImageJpeg(t *testing.T) {
 func TestIdentIconImageSvg(t *testing.T) {
 	ig, _ := identicon.New("", 5, 2)
 
-	username := "nullrocks"
+	username := "rrivera"
 	ii, _ := ig.Draw(username)
 
 	out := new(bytes.Buffer)

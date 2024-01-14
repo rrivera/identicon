@@ -6,7 +6,7 @@ import (
 )
 
 func TestGeneratorHashFunction(t *testing.T) {
-	digest := _sha256([]byte("nullrocks"))
+	digest := _sha256([]byte("rrivera"))
 	expected := []byte{223, 188, 30, 226, 43, 144, 46, 172, 218, 208, 158, 51, 4, 71, 132, 85, 19, 106, 214, 201, 130, 122, 193, 17, 220, 101, 213, 93, 164, 86, 106, 83}
 	if len(digest) != 32 {
 		t.Errorf("Incorrect len(digest): expected %v, actual %v", 32, len(digest))

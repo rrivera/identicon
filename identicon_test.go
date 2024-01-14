@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/nullrocks/identicon"
+	"github.com/rrivera/identicon"
 )
 
 func ExampleIdentIcon_GeneratorText() {
@@ -34,7 +34,7 @@ func TestIdentIconGeneratorText(t *testing.T) {
 		1,
 	)
 
-	username := "nullrocks"
+	username := "rrivera"
 	ii, _ := ig.Draw(username)
 
 	gt := ii.GeneratorText()
@@ -51,11 +51,11 @@ func TestIdentIconGeneratorText_withNamespace(t *testing.T) {
 		1,
 	)
 
-	username := "nullrocks"
+	username := "rrivera"
 	ii, _ := ig.Draw(username)
 
 	gt := ii.GeneratorText()
-	expected := "nullrocks:github.com"
+	expected := "rrivera:github.com"
 	if gt != expected {
 		t.Errorf("GeneratorText should be the namespace and the text: expected %v, actual %v", expected, gt)
 	}
@@ -69,10 +69,10 @@ func TestIdentIconGeneratorText_withRandom(t *testing.T) {
 		1,
 		identicon.SetRandom(true),
 	)
-	username := "nullrocks"
+	username := "rrivera"
 	ii, _ := ig.Draw(username)
 	gt := ii.GeneratorText()
-	expected := "nullrocks:github.com:"
+	expected := "rrivera:github.com:"
 	if !strings.HasPrefix(gt, expected) || len(gt) <= len(expected) {
 		t.Errorf("GeneratorText should be the namespace, the text and the random string: expected %v, actual %v", expected, gt)
 	}

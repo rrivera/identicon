@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/nullrocks/identicon"
+	"github.com/rrivera/identicon"
 )
 
 func main() {
@@ -21,7 +21,7 @@ func main() {
 	}
 
 	usernames := []string{
-		"nullrocks",
+		"rrivera",
 		"abc123",
 		"modulo",
 		"johndoe",

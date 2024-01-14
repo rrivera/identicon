@@ -4,7 +4,7 @@ import (
 	"image/color"
 	"testing"
 
-	"github.com/nullrocks/identicon"
+	"github.com/rrivera/identicon"
 )
 
 func TestIdentIconHSL(t *testing.T) {

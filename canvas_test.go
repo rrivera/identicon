@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/nullrocks/identicon"
+	"github.com/rrivera/identicon"
 )
 
 func ExampleIdentIcon_Array() {
@@ -14,7 +14,7 @@ func ExampleIdentIcon_Array() {
 		panic(err)
 	}
 
-	username := "nullrocks"
+	username := "rrivera"
 	ii, err := ig.Draw(username)
 
 	if err != nil {
@@ -84,7 +84,7 @@ func TestIdentIconCanvas(t *testing.T) {
 		2,
 	)
 
-	ii, _ := ig.Draw("nullrocks")
+	ii, _ := ig.Draw("rrivera")
 
 	pmlen := len(ii.Canvas.PointsMap)
 	if pmlen != 3 {
@@ -222,7 +222,7 @@ func generatedCanvas() *identicon.IdentIcon {
 		2,
 	)
 
-	ii, _ := ig.Draw("nullrocks")
+	ii, _ := ig.Draw("rrivera")
 
 	return ii
 }
